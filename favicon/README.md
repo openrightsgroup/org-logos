@@ -1,14 +1,14 @@
 
 We have two SVG files for the favicon source (essentially the same file but with colours reversed).
 
-Black text on white is used for low resolution files (64x64 and below).
+Black text on white is used for low resolution files (128x128 and below).
 
 The SVG files are resized in graphics software and exported to PNG files.
 
 The smaller resoultion icons are combined into a .ico file.
 
 ```shell
-icotool -c favicon-16x16.png favicon-32x32.png favicon-48x48.png favicon-64x64.png -o favicon.ico
+icotool -c favicon-16x16.png favicon-32x32.png favicon-48x48.png favicon-64x64.png favicon-128x128.png -o favicon.ico
 ```
 
 The files should be added to the website document root (or the webserver should be configured to find their location).
